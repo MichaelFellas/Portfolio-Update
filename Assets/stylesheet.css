@@ -1,0 +1,119 @@
+body{
+    background-color: rgb(146, 146, 146);
+    box-sizing: border-box;
+}
+
+.nav-text {
+    color: rgb(255, 255, 255);
+}
+
+/*Navbar background*/
+.bg-nav {
+    background-color: rgb(44, 44, 44);
+
+}
+
+.container-fluid {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    justify-content: center;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.container {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    justify-content: center;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.col-12 {
+    border: red 2px solid;
+    height: 300px;
+    width: 95%;
+}
+
+.col-xl-12 {
+    border: red 2px solid;
+    
+    width: 95%;
+    
+}
+
+.row {
+    justify-content: center;
+}
+
+.col-6 {
+    border: red 2px solid;
+    height: 300px;
+    width: 100%;
+}
+
+.col-xl-6 {
+    border: red 2px solid;
+    
+    width: 100%;
+    
+}
+
+.col-4 {
+    border: red 2px solid;
+    height: 300px;
+    width: 100%;
+}
+
+.col-xl-4 {
+    border: red 2px solid;
+    
+    width: 100%;
+    
+}
+
+.col-8 {
+    border: red 2px solid;
+    height: 300px;
+    width: 100%;
+}
+
+.col-xl-8 {
+    border: red 2px solid;
+    
+    
+    width: 100%;
+    
+}
+
+.info {
+    justify-content: space-between;
+}
+
+.rowInfo {
+    margin: 5px;
+    padding: 5px;
+}
+
+.col-10 {
+    border-left: black solid 2px;
+    align-items: center;
+}
+
+
+.col-xl-10 {
+border-left: black solid 2px;
+align-items: center;
+}
+
+.col-2 {
+    align-items: center;
+}
+
+.col-xl-2 {
+    align-items: center;
+}
