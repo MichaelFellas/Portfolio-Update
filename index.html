@@ -12,86 +12,177 @@
     <link rel="stylesheet" href="./Assets/stylesheet.css" />
      
 </head>
+
+
 <body>
+  <iframe id="invisible" style="display:none;"></iframe>
  <!--NavBar-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-nav nav-text">
-    <a class="navbar-brand text-reset" href="#">Michael Ariti Portfolio</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-nav nav-text d-flex">
+    <p class="navbar-brand text-reset" href="#">Michael Ariti Portfolio</p>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active nav-text">
-          <a class="nav-link text-reset" href="#">Resume<span class="sr-only">(current)</span></a>
+          <a class="nav-link text-reset" href="#" id="projectsBtn">Projects<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active nav-text">
-          <a class="nav-link text-reset" href="#">Github</a>
+          <a class="nav-link text-reset" href="#" id="contactBtn">Contact Me</a>
         </li>
         <li class="nav-item active nav-text">
-          <a class="nav-link text-reset" href="#">LinkedIN</a>
+          <a class="nav-link text-reset" href="#" id="landerBtn">Landing Page</a>
+        </li>
+        <li class="nav-item active nav-text">
+          <a class="nav-link text-reset" href="./Assets/Michael_Ariti_Tech_Resume_Feb_2022.pdf" target="_blank">Resume</a>
         </li>
       </ul>
       <span class="nav-text">
         Welcome To My Portfolio
       </span>
     </div>
-  </nav>
+ </nav>
 
-  <!--Container-->
-  <div class="container-fluid">
-    <div class="row d-flex">
-      <div class="col-12 col-xl-4">
-        <p>Photo</p>
-      </div>
-      <div class="col-12 col-xl-8 d-flex flex-column info">
-       
-        <div class="row rowInfo d-flex">
-        <div class="col-2 col-xl-2 d-flex"><p>About Me</p></div>
-        <div class="col-10 col-xl-10 d-flex "><p>My name is Michael Ariti, Welcome to my portfolio! I am 27 years old and am an amateur full stack developer. 
+  <!--Container Lander Page-->
+  <div class="container-fluid" id="lander">
+    <!--Lander Page-->
+     <!--JumboTron-->
+     <div class="jumbotron jumbotron-fluid d-flex lander">
+        <h1 class="display-4">About Me</h1>
+        <p class="lead">My name is Michael Ariti, Welcome to my portfolio! I am 27 years old and am an amateur full stack developer. 
           I graduated from Curtin University in 2021 with a bachelor of commerce majoring in finance. 
           I have two dogs Chaos & Rogue, both Boxers that are a massive handful and need many walks everyday.
           Outside of coding I enjoy playing video games, my favourites are Halo 3, Burnout 3 and Pokemon Blue.
-          I also love to cook in the kitchen, my signature dish is a spaghetti bolognese that takes over 24 hours to make.</p></div>
+          I also love to cook in the kitchen, my signature dish is a spaghetti bolognese that takes over 24 hours to make.</p>
+        
       </div>   
-      <div class="row d-flex rowInfo ">
-        <div class="col-2 col-xl-2 d-flex"><p>Email</p></div>
-        <div class="col-10 col-xl-10 d-flex "><p>MichaelAriti94@gmail.com</p></div>
-      </div>        
-      <div class="row d-flex rowInfo ">
-        <div class="col-2 col-xl-2 d-flex"><p>Phone Number</p></div>
-        <div class="col-10 col-xl-10 d-flex"><p>0433992439</p></div>
-      </div>             
-      </div>      
-    </div>
-    <div class="row d-flex">
-      <div class="col-12 col-xl-12">
-        <p>Project</p>
-      </div>
-    </div>
-    <div class="row d-flex">
-      <div class="col-12 col-xl-6">
-        <p>Weather Dashboard</p>
-
-      </div>
-      <div class="col-12 col-xl-6">
-        <p>Daily Planner</p>
-
-      </div>
-    </div>
-    <div class="row d-flex">
-      <div class="col-12 col-xl-6">
-        <p>Password Gen</p>
-
-      </div>
-      <div class="col-12 col-xl-6">
-        <p>Multi Choice Quiz</p>
-
-      </div>
+    <br>   
+    <!--Collage-->
+    <div class="row">
+      <img src="Assets/Images/Michael Collage.png" alt="Photo Collage of Michael Ariti & Pets" class="photo"/>
     </div>
   </div>
 
 
+  <!--Container Contact Deets-->
+  <div class="container-fluid" id="contact">
+    <div class="row">
 
+     <div class="list-group">
+       <a href="https://github.com/MichaelFellas" target="_blank" class="list-group-item list-group-item-action blueLink" aria-current="true">
+        Github       </a>
+       <a href="https://www.linkedin.com/in/michael-ariti/" target="_blank" class="list-group-item list-group-item-action blueLink">LinkedIn</a>
+       <a href="mailto: MichaelAriti94@gmail.com" class="list-group-item list-group-item-action blueLink">Email: MichaelAriti94@gmail.com</a>
+       <p href="#" class="list-group-item list-group-item-action">Mobile Phone: 0433992439</p>
+       
+     </div>
+    </div>
+  </div>
+
+    <!--Container Projects-->
+  <div class="container-fluid" id="projects">
+    
+    <div class="row proggy d-flex">
+      <div class="col-12 col-xl-12 d-flex">
+        <div class="col-6 col-xl-6 d-flex">
+          <img src="Assets/Images/Marvel-Project.jpeg" alt="Marvel Project Landing Page" class=""/>
+        </div>          
+        <div class="col-6 col-xl-6 d-flex flex-column"> 
+          <div class="row"><p>Project 1 - Marvel Fan Club</p></div>       
+          <div class="row"><p>Github Repo: <a href="https://github.com/HannahAB777/Marvel-Fan-Site" target="_blank"> https://github.com/MichaelFellas/Weather-Dashboard</a></p></div>       
+          <div class="row"><p>Deployed Application: <a href="https://hannahab777.github.io/Marvel-Fan-Site/" target="_blank"> https://github.com/MichaelFellas/Weather-Dashboard</a></p></div>       
+          <div class="row"><p>
+            A group project allowing the user to select a marvel team. Once selected the site will display characters from that team and movies they have been in, with links to their marvel wiki and the movies IMBD page.
+            <br>
+            <br>
+            Languages used: HTML5, CSS, Javascript, JQuery.
+            <br>
+            <br>
+            Other Tech used: Photoshop, MarvelAPI, OMBDAPI, Materialize CSS framework</p></div>        
+        </div>
+      </div>
+    </div>
+    <div class="row proggy d-flex">
+      <div class="col-12 col-xl-6 d-flex">      
+        <div class="col-6 col-xl-6 d-flex"> 
+          <img src="Assets/Images/weatherDashScreenshot.png" alt="Weather Dashboard Screenshot" class=""/>         
+        </div>
+        <div class="col-6 col-xl-6 d-flex flex-column"> 
+          <div class="row"><p>Weather Dashboard</p></div>       
+          <div class="row"><p>Github Repo: <a href="https://github.com/MichaelFellas/Weather-Dashboard" target="_blank"> https://github.com/MichaelFellas/Weather-Dashboard</a></p></div>       
+          <div class="row"><p>Deployed Application: <a href="https://michaelfellas.github.io/Weather-Dashboard/" target="_blank"> https://michaelfellas.github.io/Weather-Dashboard/</a></p></div>       
+          <div class="row"><p>
+            This app allows a user to search for a city and find the current weather and also a 5 days forecast relying on data from the Open Weather API, automatically saves the users past searches allowing a quick reload without having to search.
+            <br>
+            <br>
+            Languages used: HTML5, CSS, Javascript, JQuery.
+            <br>
+            <br>
+            Other Tech used: OpenWeatherAPI, GoogleMapsAPI</p></div>        
+        </div>
+
+      </div>
+    
+      <div class="col-12 col-xl-6 d-flex">      
+        <div class="col-6 col-xl-6 d-flex"> 
+          <img src="Assets/Images/day-Planner.png" alt="Day Planner Screenshot" class=""/>         
+        </div>
+        <div class="col-6 col-xl-6 d-flex flex-column"> 
+          <div class="row"><p>Daily Planner</p></div>       
+          <div class="row"><p>Github Repo: <a href="https://github.com/MichaelFellas/Daily-Planner" target="_blank">https://github.com/MichaelFellas/Daily-Planner</a></p></div>       
+          <div class="row"><p>Deployed Application: <a href="https://michaelfellas.github.io/Daily-Planner/" target="_blank"> https://michaelfellas.github.io/Daily-Planner/</a></p></div>       
+          <div class="row"><p>
+            A project allowing the user to plan their work day, features backgrounds that change depending on the current time, saves all inputs to local storage and refreshes daily.
+            <br>
+            <br>
+            Languages used: HTML5, CSS, Javascript, JQuery.
+            <br>
+            <br>
+            Other Tech used: Moment.</p></div>        
+        </div>
+
+      </div>
+    </div>
+    <div class="row proggy d-flex">
+      <div class="col-12 col-xl-6 d-flex">   
+        <div class="col-6 col-xl-6 d-flex">
+          <img src="Assets/Images/Code-Gen-Screenshot.png" alt="Password Generator Screenshot" class=""/>          
+        </div>
+        <div class="col-6 col-xl-6 d-flex flex-column"> 
+          <div class="row"><p>Password Generator</p></div>       
+          <div class="row"><p>Github Repo: <a href="https://github.com/MichaelFellas/Password-Generator" target="_blank">https://github.com/MichaelFellas/Password-Generator</a></p></div>       
+          <div class="row"><p>Deployed Application: <a href="https://michaelfellas.github.io/Password-Generator/" target="_blank">https://michaelfellas.github.io/Password-Generator/</a></p></div>       
+          <div class="row"><p>
+            A project allowing the user to randomly generate a password after responding to alerts asking what criteria they would like the password to fulfil.
+            <br>
+            <br>
+            Languages used: HTML5, CSS, Javascript, JQuery.
+            </p></div>        
+        </div>
+
+      </div>
+      <div class="col-12 col-xl-6 d-flex">       
+        <div class="col-6 col-xl-6 d-flex">  
+          <img src="Assets/Images/codingQuizScreenshot.png" alt="Coding Quiz Screenshot" class=""/>       
+        </div>
+        <div class="col-6 col-xl-6 d-flex flex-column"> 
+          <div class="row"><p>Multi Choice Quiz</p></div>       
+          <div class="row"><p>Github Repo: <a href="https://github.com/MichaelFellas/Coding-Quiz" target="_blank">https://github.com/MichaelFellas/Coding-Quiz</a></p></div>       
+          <div class="row"><p>Deployed Application: <a href="https://michaelfellas.github.io/Coding-Quiz/" target="_blank">https://michaelfellas.github.io/Coding-Quiz/</a></p></div>       
+          <div class="row"><p>
+            A project allowing the user to test there coding knowledge in a fun multi choice game, feature randomly ordered questions, a timer and a highscores page.
+            <br>
+            <br>
+            Languages used: HTML5, CSS, Javascript, JQuery.</p></div>        
+        </div>
+
+      </div>
+    </div>
+    </div>
+  </div>
+  
+
+  
 
 
 
@@ -127,6 +218,7 @@
 <!--Moment-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <!--Javascript-->
-<script src="Assets/Javscript.js"></script>
+<script src="./Assets/Javscript.js"></script>
+
 </body>
 </html>
