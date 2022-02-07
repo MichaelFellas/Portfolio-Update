@@ -36,3 +36,4 @@ function displayContact (){
     contact.setAttribute("style", "display: block");
     projects.setAttribute("style", "display: none");
 };
+

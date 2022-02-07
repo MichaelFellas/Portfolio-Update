@@ -46,6 +46,16 @@ body{
     align-items: center;
 }
 
+.container-fluid3 {
+    margin-top: 2%;
+    margin-bottom: 5%;
+    justify-content: center;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 .container {   
     justify-content: space-between;    
     margin-left: 1%;
@@ -83,12 +93,16 @@ body{
 
 .col-xl-6 p{
     font-size: 1.25vmin;
-    padding: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2.5%;
 }
 
 .col-6 p{
     font-size: 1.25vmin;
-    padding: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2.5%;
 }
 
 .col-xl-6 img{
