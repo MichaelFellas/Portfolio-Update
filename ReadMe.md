@@ -36,10 +36,10 @@ MIT
 
 ## Secreenshot
 
-![Coding-Quiz-Screenshot](./Assets/images/Portfolio_Screenshot.png)
+![Portfolio-Screenshot](./Assets/Images/Portfolio_Screenshot.png)
 
 ## Webpage URL
-[Weather-Dashboard-URL](https://michaelfellas.github.io/Portfolio-Update/)
+[Portfolio-URL](https://michaelfellas.github.io/Portfolio-Update/)
 
 ### End
 
