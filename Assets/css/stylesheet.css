@@ -130,7 +130,7 @@ body{
 }
 
 .lead{
-font-size: 2.5vmin;
+font-size: 25px;
 padding: 25px;
 border-left: rgb(104, 104, 104) 2px solid;
 }
@@ -144,11 +144,6 @@ border-left: rgb(104, 104, 104) 2px solid;
     justify-content: center;
     width: 100%;
     box-shadow: 5px 5px 15px;   
-}
-
-.display-4 {
-    font-size: 4vmin;
-    padding: 25px;
 }
 
 .d-block {
@@ -196,6 +191,11 @@ border-left: rgb(104, 104, 104) 2px solid;
     background-color: white;
 }
 
+h1 {
+    font-size: 35px;
+    padding: 25px;
+}
+
 
 
 .shadow {
@@ -205,7 +205,27 @@ border-left: rgb(104, 104, 104) 2px solid;
 
 .margin {
     margin-left: 2%;
+}
 
+.wideBwip {
+    width: 100%;
+    
+}
+
+.wideBwip i{
+    color: aqua;
+    
+}
+
+.wideBwip a{
+    
+    padding: 1%;
+}
+
+
+
+.list-group a, .list-group p{
+    color: black;
 }
 
 .burger {
@@ -245,6 +265,27 @@ a i{
    
 }
 
+.photo p{
+    text-align: center;
+}
+
+.photo {
+    align-items: center;
+}
+
+.photo a{
+    margin: 1%;
+    padding: 2%;
+    background-color: rgb(237, 237, 237);
+    width: 50px;
+    align-items: center;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    border-radius: 20%;
+    box-shadow: 1px 1px 5px 1px black;
+}
+
 .oddButton {
     background-color: rgb(77, 77, 77);
 }
@@ -254,11 +295,27 @@ a i{
 }
 
 .linkBox {
-width:inherit;
-
-
+   width:inherit;
 }
+
+.titleRow {
+    width: 100%;
+    font-size: larger;
+}
+
+.bigJumbo {
+    display: flex;
+}
+
+.projectPics {
+    object-fit: contain;
+    width: 600px;
+    overflow: hidden;
+    height: 600px;
+}
+
 footer {
+    margin-top: 100px;
     height: 100px;
     background-color: rgb(44, 44, 44);
     width: 100%;
@@ -268,6 +325,44 @@ footer {
 }
 
 /*Media Queries*/ 
+
+@media screen and (max-width: 1290px) {
+    
+
+    .wideBwip a{
+    
+        padding: 2%;
+    }
+
+    .projectPics {
+        width: 500px;
+    }
+
+    .nav{
+        margin-bottom: 75px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 1200px) {
+    
+
+    .wideBwip a{
+    
+        padding: 2%;
+    }
+
+    .projectPics {
+        width: 500px;
+    }
+
+    .lead{
+        font-size: 20px;
+    }
+
+}
 
 @media screen and (max-width: 1000px) {
     .navbar-expand {
@@ -289,6 +384,75 @@ footer {
         font-size: large;        
     }
 
+    .wideBwip a{
+    
+        padding: 3%;
+    }
+
+    .titleRow {
+        width: 100%;
+        font-size: large;
+    }
+
+    .projectPics {
+        width: 400px;
+        height: 400px;
+    }
+
+    .proggy {
+        margin-bottom: 50px;
+    }
+
+    nav {
+        margin-bottom: 50px;
+    }
+
+    .bigJumbo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .jumbotron {
+        padding: 0%;
+    }
+
+    .lead {
+        border: none;
+        
+    }
+
+    h1{
+        text-align: center;
+        border-bottom: 2px solid black;
+        font-size: 35px;
+        padding:25px;
+        
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .textOff p {
+        display: none;
+    }
+
+    .textOff {
+        margin: 3%;
+    }
+
+    .projectPics {
+        width: 300px;
+    }
+
+    .lead{
+        font-size: 20px;
+    }
+
+    
+
 }
 
 @media screen and (max-width: 600px) {
@@ -309,6 +473,17 @@ footer {
     
     .col-6 p{
         font-size: medium;        
+    }
+
+    .projectPics {
+        width: 130px;
+    }
+    .lead{
+        font-size: 20px;
+    }
+
+    h1{
+        font-size: 23px;
     }
 
 }
