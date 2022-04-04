@@ -3,6 +3,11 @@ html {
     min-height: 100vh;
 }
 
+/* .icons i{
+    color: rgb(255, 255, 255);
+ 
+} */
+
 body{
     background-color: rgb(146, 146, 146);
     box-sizing: border-box;
@@ -19,7 +24,7 @@ body{
 
 .borderBottom {
     border-bottom: 2px white solid;
-    box-shadow: 5px 5px 15px black ;
+    box-shadow:   0 6px 4px -4px rgba(0,0,0,0.7);
 }
 
 /*Navbar background*/
@@ -68,38 +73,38 @@ body{
 }
 
 .col-12 {    
-    height: fit-content;
+    
     width: 100%;
     justify-content: center;   
 }
 
 .col-xl-12 {
     justify-content: center;
-    height: fit-content;
+    
     width: 100%;    
 }
 
 .col-6 {   
     margin-bottom: 5%;    
     flex-basis: 48%;    
-    height: 500px;
+    
 }
 
 .col-xl-6 {
     margin-bottom: 5%;    
     flex-basis: 48%;    
-    height: 500px;    
+     
 }
 
 .col-xl-6 p{
-    font-size: 1.25vmin;
+    font-size: larger;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 2.5%;
 }
 
 .col-6 p{
-    font-size: 1.25vmin;
+    font-size: larger;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 2.5%;
@@ -107,12 +112,12 @@ body{
 
 .col-xl-6 img{
     flex-basis: 100%;
-    width: 50%
+    
 }
 
 .col-6 img{
     flex-basis: 100%;
-    width: 50%
+    
 }
 
 /**/
@@ -191,6 +196,8 @@ border-left: rgb(104, 104, 104) 2px solid;
     background-color: white;
 }
 
+
+
 .shadow {
     box-shadow: 50px 50px 100px;
     width: 100%;
@@ -201,6 +208,56 @@ border-left: rgb(104, 104, 104) 2px solid;
 
 }
 
+.burger {
+    display: none;  
+}
+
+.close {
+    display: none;
+}
+
+.nav-margin {
+    margin-bottom: 0%;
+}
+
+a:hover{
+    text-decoration: none;
+    color: white;
+    
+}
+
+a p{
+    color: white;
+}
+
+a i{
+    color: black;
+}
+
+.burger a i {
+    color: white;
+}
+
+.nav-btn-mob {
+   border-radius: 2px;
+   
+   padding: 2%;
+   
+}
+
+.oddButton {
+    background-color: rgb(77, 77, 77);
+}
+
+.mobileMenuNav {
+    width: 100%;
+}
+
+.linkBox {
+width:inherit;
+
+
+}
 footer {
     height: 100px;
     background-color: rgb(44, 44, 44);
@@ -209,3 +266,50 @@ footer {
     bottom: 0;
     border-top: 2px white solid;
 }
+
+/*Media Queries*/ 
+
+@media screen and (max-width: 1000px) {
+    .navbar-expand {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .close {
+        display: block;
+    }
+    .col-xl-6 p{
+        font-size: large;       
+    }
+    
+    .col-6 p{
+        font-size: large;        
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .navbar-expand {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .close {
+        display: block;
+    }
+    .col-xl-6 p{
+        font-size: medium;       
+    }
+    
+    .col-6 p{
+        font-size: medium;        
+    }
+
+}
+  
