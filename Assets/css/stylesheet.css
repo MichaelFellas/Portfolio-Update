@@ -9,8 +9,17 @@ html {
 } */
 
 body{
-    background-color: rgb(146, 146, 146);
+    background-color: rgb(65, 65, 65);
     box-sizing: border-box;
+}
+
+canvas#responsive-canvas {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
 }
 
 .nav-text {
@@ -41,6 +50,7 @@ body{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    z-index: 0;
 }
 
 .container-fluid2 {    
@@ -68,20 +78,23 @@ body{
 }
 
 .row {
-    justify-content: center;
-   
+    justify-content: center;   
 }
 
 .col-12 {    
-    
+    height: 500px;
     width: 100%;
     justify-content: center;   
+    padding:0;
+    background-color: rgb(65, 65, 65);
 }
 
 .col-xl-12 {
     justify-content: center;
-    
-    width: 100%;    
+    height: 500px;
+    width: 100%;
+    padding: 0px;    
+    background-color: rgb(65, 65, 65);
 }
 
 .col-6 {   
@@ -184,6 +197,8 @@ border-left: rgb(104, 104, 104) 2px solid;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
     background-color: rgb(146, 146, 146);    
 }
 
@@ -361,6 +376,16 @@ footer {
     .lead{
         font-size: 20px;
     }
+    .col-12 {    
+        height: 400px;
+         
+    }
+    
+    .col-xl-12 {
+       
+        height: 400px;
+         
+    }
 
 }
 
@@ -400,7 +425,8 @@ footer {
     }
 
     .proggy {
-        margin-bottom: 50px;
+        margin-bottom: 75px;
+        margin-top: 75px;
     }
 
     nav {

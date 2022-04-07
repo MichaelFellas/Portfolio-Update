@@ -105,3 +105,47 @@ function hideMobileMenu() {
 window.addEventListener("resize", function () {
   hideAll();
 });
+
+var canvas = document.getElementById("responsive-canvas");
+var ctx = canvas.getContext("2d");
+var stgw = window.innerWidth;
+var stgh = window.innerHeight;
+var count = 100;
+var lcount = 5;
+var layer = [];
+var layery = [];
+ctx.fillStyle = "rgba(102, 255, 255, 0.5)";
+for (var l = 0; l < lcount; l++) {
+  ctx.clearRect(0, 0, stgw, stgh);
+  for (var i = 0; i < (count * (lcount - l)) / 1.5; i++) {
+    var myx = Math.floor(Math.random() * stgw) + 20;
+    var myy = Math.floor(Math.random() * stgh);
+    var myh = l * 3;
+    var myw = myh / 5;
+    ctx.beginPath();
+    ctx.moveTo(myx, myy);
+    ctx.lineTo(myx + myw, myy + myh);
+    ctx.arc(myx, myy + myh, myw, 0, 1 * Math.PI);
+    ctx.lineTo(myx - myw, myy + myh);
+    ctx.closePath();
+    ctx.fill();
+  }
+  layer[l] = new Image();
+  layer[l].src = canvas.toDataURL("image/png");
+  layery[l] = 0;
+}
+
+function animate() {
+  ctx.clearRect(0, 0, stgw, stgh);
+  for (var l = 0; l < lcount; l++) {
+    layery[l] += (l + 1.5) * 1;
+    if (layery[l] > stgh) {
+      layery[l] = layery[l] - stgh;
+    }
+    ctx.drawImage(layer[l], 0, layery[l]);
+    ctx.drawImage(layer[l], 0, layery[l] - stgh);
+  }
+  window.requestAnimationFrame(animate);
+}
+
+animate();
