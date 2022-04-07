@@ -24,6 +24,8 @@ The purpose of this repository is to create a portfolio for myself that keeps al
 2. My contact information.
 3. My best projects so far with descriptions and screenshots of each.
 4. My resume available for download or viewing.
+5. Mobile Responsiveness.
+6. Animated background.
 ```
 
 ## File Directory
