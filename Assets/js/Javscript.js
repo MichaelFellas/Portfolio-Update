@@ -110,17 +110,17 @@ var canvas = document.getElementById("responsive-canvas");
 var ctx = canvas.getContext("2d");
 var stgw = window.innerWidth;
 var stgh = window.innerHeight;
-var count = 50;
-var lcount = 15;
+var count = 100;
+var lcount = 5;
 var layer = [];
 var layery = [];
-ctx.fillStyle = "rgba(102, 255, 255, 0.5)";
+ctx.fillStyle = "rgba(255,255,255, 0.5)";
 for (var l = 0; l < lcount; l++) {
   ctx.clearRect(0, 0, stgw, stgh);
   for (var i = 0; i < (count * (lcount - l)) / 1.5; i++) {
     var myx = Math.floor(Math.random() * stgw);
     var myy = Math.floor(Math.random() * stgh);
-    var myh = l * 0.5;
+    var myh = l * 2;
     var myw = myh / 10;
     ctx.beginPath();
     ctx.moveTo(myx, myy);
@@ -138,7 +138,7 @@ for (var l = 0; l < lcount; l++) {
 function animate() {
   ctx.clearRect(0, 0, stgw, stgh);
   for (var l = 0; l < lcount; l++) {
-    layery[l] += (l + 1.5) * 0.75;
+    layery[l] += l * 0.5;
     if (layery[l] > stgh) {
       layery[l] = layery[l] - stgh;
     }
