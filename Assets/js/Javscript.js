@@ -11,6 +11,8 @@ const burgerButton = document.getElementById("burgerIcon");
 const closeButton = document.getElementById("closeIcon");
 const mobileMenu = document.getElementById("mobileMenu");
 const bigMenu = document.getElementById("bigMenu");
+document.getElementById("responsive-canvas").width = window.innerWidth;
+document.getElementById("responsive-canvas").height = window.innerHeight;
 
 displayLander();
 
@@ -47,6 +49,8 @@ projectButton2.addEventListener("click", function () {
 });
 
 function hideAll() {
+  document.getElementById("responsive-canvas").width = window.innerWidth;
+  document.getElementById("responsive-canvas").height = window.innerHeight;
   var width = window.innerWidth;
   if (width > 1000) {
     hideMobileMenu();
@@ -111,7 +115,7 @@ var ctx = canvas.getContext("2d");
 var stgw = window.innerWidth;
 var stgh = window.innerHeight;
 var count = 100;
-var lcount = 5;
+var lcount = 7;
 var layer = [];
 var layery = [];
 ctx.fillStyle = "rgba(255,255,255, 0.5)";
