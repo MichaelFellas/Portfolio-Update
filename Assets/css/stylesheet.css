@@ -141,10 +141,20 @@ canvas#responsive-canvas {
     padding: 5px;
 }
 
+.skills {
+margin-left: 2%;
+margin-right: 2%;
+
+}
+
 .lead{
 font-size: 25px;
 padding: 25px;
 border-left: rgb(104, 104, 104) 2px solid;
+}
+
+.lead li{
+    margin-left: 10%;
 }
 
 .photo {
