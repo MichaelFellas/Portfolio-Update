@@ -85,7 +85,7 @@ canvas#responsive-canvas {
     width: 100%;
     justify-content: center;   
     padding:0;
-    background-color: rgb(65, 65, 65);
+    
 }
 
 .col-xl-12 {
@@ -93,7 +93,7 @@ canvas#responsive-canvas {
     height: 500px;
     width: 100%;
     padding: 0px;    
-    background-color: rgb(65, 65, 65);
+    
 }
 
 .col-6 {   
@@ -151,10 +151,16 @@ margin-right: 2%;
 font-size: 25px;
 padding: 25px;
 border-left: rgb(104, 104, 104) 2px solid;
+
+}
+
+.lead p{
+    margin-left: 25%;
 }
 
 .lead li{
-    margin-left: 10%;
+    margin-left: 45%;
+    
 }
 
 .photo {
@@ -208,7 +214,7 @@ border-left: rgb(104, 104, 104) 2px solid;
     margin-right: auto;
     margin-top: 200px;
     margin-bottom: 200px;
-    background-color: rgb(146, 146, 146);    
+      
 }
 
 .bgcolour {
@@ -456,6 +462,20 @@ footer {
 
     .lead {
         border: none;
+        
+    }
+
+    .skills{
+        margin-top: -5%;
+        
+    }
+
+    .lead p{
+        margin-left: 0%;
+    }
+    
+    .lead li{
+        margin-left: 0%;
         
     }
 
